@@ -8,25 +8,22 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-
-    background: transparent !important;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    background: transparent;
     overflow: hidden;
+}
+
+body {
+    display: inline-block;
 }
 
 #timer {
     font-family: Arial, sans-serif;
-    font-size: 4rem;
+    font-size: 48px;
     font-weight: 700;
-    color: white;
+    color: black; /* change to white later if needed */
     line-height: 1;
-    background: transparent;
+    display: inline-block;
+    white-space: nowrap;
 }
 </style>
 </head>
@@ -53,7 +50,7 @@ function updateCountdown() {
 }
 
 updateCountdown();
-setInterval(updateCountdown, 1000);
+setInterval(updateCountdown, 60000);
 </script>
 
 </body>
